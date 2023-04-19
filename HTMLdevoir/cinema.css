@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #710627;
+    color: #000500;
+}
+
+.list_film{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+    width: 800px;
+    
+    box-sizing: content-box;
+}
+
+.nav-item{
+    background-color: #EA5863;
+    padding: 1%;
+    border-radius: 30%;
+}
+
+.h1{
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    background-color: #C6AB67;
+    border-radius: 30%;
+    text-align: center;
+    padding: 3%;
+    
+}
+
+.bulle_1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.h2{
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    background-color: #C6AB67;
+    border-radius: 30%;
+    text-align: center;
+    padding: 3%
+}
+
+.h3{
+    text-align: left;
+}
+
+.bulle_2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pied_page{
+    background-color: #000500;
+    flex-direction: column;
+    margin-top: 3%;
+    color: white;
+}
+
+.horaires{
+    margin-top: 1%;
+   
+}
+
+.reseaux{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1%;
+    
+}
+
+.imager{
+    width: 50px;
+    height: auto;
+}
+
+body{
+    background-color: #DCC48E;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+/*Contact*/
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+#contact h1 {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+  
+form {
+    width: 60%;
+}
+  
+.form-group {
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+  
+button[type="submit"] {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+  
+button[type="submit"]:hover {
+    background-color: #d00;
+}
+  
+#contact-info {
+    width: 35%;
+}
+  
+#contact-info h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+ #contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.pied_contact{
+    margin-left: 5px;
+}
+/*Films*/
+.films-section {
+	margin-bottom: 50px;
+}
+
+.films-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.film-card {
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin-bottom: 20px;
+	flex-basis: calc(33.33% - 20px);
+}
+
+.film-card img {
+	width: 100%;
+	height: auto;
+}
+
+.film-card h3 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.film-card .film-info {
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+.film-card .trailer-link {
+	display: block;
+	margin-bottom: 10
+}
+/* Acteurs */
+#acteurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #acteurs h1 {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .acteur {
+    width: 30%;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #C6AB67;
+    border-radius: 30px;
+    text-align: center;
+  }
+  
+  .acteur img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .acteur h2 {
+    margin-bottom: 10px;
+  }
+  
+  .acteur p {
+    font-size: 1.1em;
+  }
+  
+  .acteur ul {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .acteur ul li {
+    margin-bottom: 5px;
+  }
+  
+  .acteur a {
+    color: #000500;
+    font-weight: bold;
+  }
