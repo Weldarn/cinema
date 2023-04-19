@@ -5,30 +5,67 @@
     list-style: none;
     text-decoration: none;
 }
-.navbar{
+.blend {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #710627;
-    color: #000500;
 }
-
+nav.blend ul li a {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    padding: 5px;
+    
+}
+nav.blend ul li a:hover {
+    color:#fff;
+}
+nav.blend ul li a:before,
+nav.blend ul li a:after{
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background:#710627;
+    transition: all .5s;
+    margin: auto;
+    content:'.';
+    color: transparent;
+    z-index: -1;
+    opacity: 0.75;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+nav.blend ul li a:before {
+    left: 0;
+  }
+  nav.blend ul li a:after {
+    right: 0;
+  }
+  
+  nav.blend ul li a:hover:after,
+  nav.blend ul li a:hover:before {
+    width: 100%;
+  }
 .list_film{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 3%;
-    width: 800px;
-    
+    width: 100%;
     box-sizing: content-box;
+    background-color: rgb(206, 46, 46);
+  
 }
-
-.nav-item{
-    background-color: #EA5863;
-    padding: 1%;
-    border-radius: 30%;
+.list_film a {
+    color: black; 
+    padding-left: 50%;
+    
 }
-
 .h1{
     flex-direction: row;
     justify-content: center;
@@ -63,7 +100,12 @@
 
 .bulle_2{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image_acteurs{
+    border-radius: 20%;
 }
 
 .pied_page{
@@ -164,6 +206,11 @@ button[type="submit"]:hover {
     margin-left: 5px;
 }
 /*Films*/
+
+.h2_films{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 .films-section {
 	margin-bottom: 50px;
 }
@@ -201,11 +248,13 @@ button[type="submit"]:hover {
 	display: block;
 	margin-bottom: 10
 }
+
 /* Acteurs */
 #acteurs {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   #acteurs h1 {
@@ -217,7 +266,7 @@ button[type="submit"]:hover {
   
   .acteur {
     width: 30%;
-    margin-bottom: 50px;
+    margin-bottom: 4%;
     padding: 20px;
     background-color: #C6AB67;
     border-radius: 30px;
@@ -252,3 +301,12 @@ button[type="submit"]:hover {
     color: #000500;
     font-weight: bold;
   }
+.acteurs-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.acteurs-container{
+    margin-top: 2%;
+}
